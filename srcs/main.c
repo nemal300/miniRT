@@ -6,7 +6,7 @@
 /*   By: kbulwer <kbulwer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/14 14:27:32 by kbulwer           #+#    #+#             */
-/*   Updated: 2021/10/05 18:59:48 by kbulwer          ###   ########.fr       */
+/*   Updated: 2021/10/05 23:10:20 by kbulwer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int			key_hook(int key, t_mlxwin *mlxwin)
 		mlxwin->img->addr = mlx_get_data_addr(mlxwin->img->img,
 		&mlxwin->img->bits_per_pixel,
 		&mlxwin->img->line_lenght, &mlxwin->img->endian);
-		// render(mlxwin);
+		render(mlxwin);
 		mlx_put_image_to_window(mlxwin->mlx,
 		mlxwin->win, mlxwin->img->img, 0, 0);
 	}
